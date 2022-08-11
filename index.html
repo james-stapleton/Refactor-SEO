@@ -1,18 +1,3 @@
-<!--To do:
-
-Completed:
-Update title to something more descriptive 
-Ensure headings are descending h1-h6
-Fix broken links
-Fix heading font
-Make sure images have accessible alt
-Eleminate redundant code
-Add comments to both html and css files
-**Commit regularly (like after commenting)**
-Deploy App
-Write README
--->
-
 <!--Head with title and link to external css sheet-->
 <!DOCTYPE html>
 <html lang="en-us">
@@ -24,7 +9,10 @@ Write README
   <!--/head -->
 
   <body>
-    <!--Top heading bar with navigation links to fix -->
+    <!--Top heading bar
+    unspecific div changed to semantic nav
+    search enginge optimization link fixed
+    h1 font fixed -->
     <header>
       <h1>Horiseon</h1>
       <nav>
@@ -44,10 +32,12 @@ Write README
       </nav>
     </header>
 
-    <!--Large image. Detailed formatting in style.css. Optimize?-->
+    <!--Large image. Detailed formatting in style.css. -->
     <div class="hero"></div>
 
-    <!--Main body section with articles-->
+    <!--Main body article with sections
+    class id for each section changed to "content element" for consolidation
+    elements updated to semantic elements  -->
     <article class="content">
       <section id="search-engine-optimization" class="content-element">
         <img
@@ -94,7 +84,11 @@ Write README
       </section>
     </article>
 
-    <!--Side bar. Non-semantic elements. Aside maybe? consolidate formatting -->
+    <!--Side bar
+        elements updated to aside and section for better semantics
+        images updated with alts
+        classes consolidated to "benefit-elements"
+        alts added to images-->
     <aside class="benefits">
       <section class="benefit-elements">
         <h3>Lead Generation</h3>
@@ -131,7 +125,8 @@ Write README
       </section>
     </aside>
 
-    <!--Footer -->
+    <!--Footer 
+        Heading changed to h4 to follow descending order-->
     <div class="footer">
       <h4>Made with ❤️️ by Horiseon</h4>
       <p>&copy; 2019 Horiseon Social Solution Services, Inc.</p>
